@@ -1,0 +1,16 @@
+<!--Muestra detalles del 'event' seleccionado con *ngIf-->
+<div *ngIf="song">
+    <h2>{{song.songName | uppercase}} Details</h2>
+    <div><span>id: </span>{{song._id}}</div>
+    <div><span>user id: </span>{{song.author}}</div>
+
+    <!-- Permite editar el nombre del event mediante Two-Way Binding-->
+    <div>
+      <label for="song-name">Song name: </label>
+      <input id="song-name" [(ngModel)]="song.songName" placeholder="Song name"/>
+
+    </div>
+    <!--------------------------------------------------------------->
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>

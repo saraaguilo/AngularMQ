@@ -7,9 +7,20 @@ import { Event } from './event';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
+import { AccordionModule } from 'primeng/accordion';
+import { MenuItem } from 'primeng/api';
 
 @Injectable({ providedIn: 'root' })
 export class EventService {
+  theme: string = 'light';
+  setTheme(theme: string): void {
+    this.theme = theme;
+  }
+
+  getTheme(): string {
+    return this.theme;
+  }
+
 
   constructor(
     private messageService: MessageService,

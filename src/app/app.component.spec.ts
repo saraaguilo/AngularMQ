@@ -3,6 +3,10 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navbar/navbar.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { AccordionModule } from 'primeng/accordion';
+import { MenuItem } from 'primeng/api';
+import { InputSwitchModule } from 'primeng/inputswitch';
+
 
 
 describe('AppComponent', () => {

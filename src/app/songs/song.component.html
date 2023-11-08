@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Songs</h1>
+  </body>
+  </html>
+
+<div>
+  <label for="new-song">Song name: </label>
+  <input id="new-song" #songName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button [routerLink]="['/songAdd']"> Add Song </button>
+
+</div>
+
+<ul class="songs">
+  <li *ngFor="let song of songs">
+    <a routerLink="/detailSong/{{song._id}}">
+      <span class="badge">{{song.songName}}</span> 
+    </a>
+    <button type="button" class="delete" title="delete song"
+      (click)="delete(song)">x</button>
+  </li>
+</ul>

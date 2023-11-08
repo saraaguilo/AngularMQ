@@ -20,22 +20,37 @@ import { NavigationComponent } from './navbar/navbar.component';
 import { EventAddComponent } from './event-add/event-add.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { SongsComponent } from './songs/song.component';
+import { SongAddComponent } from './song-add/song-add.component';
+import { SongDetailComponent } from './song-detail/song-detail.component';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import { AccordionModule } from 'primeng/accordion';
+import { MenuItem } from 'primeng/api';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     EventDetailComponent,
     UserDetailComponent,
+    
     MessagesComponent,
     DashboardComponent,
     EventSearchComponent,
     UserSearchComponent,
     EventsComponent,
     UsersComponent,
+    SongsComponent,
+    SongDetailComponent,
     NavigationComponent,
     EventAddComponent,
     UserAddComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    SongsComponent,
+    SongAddComponent,
+    
+    
 ],
   imports: [
     BrowserModule,

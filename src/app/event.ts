@@ -15,4 +15,5 @@ export interface Event {
     _id: string;
     createdAt?: string; 
     updatedAt?: string;
+    checked:boolean;
 }

@@ -1,0 +1,27 @@
+  <h2>ADD A SONG</h2>
+  
+<div>
+      <label for="song-songName">Name: </label>
+      <input id="song-name" [(ngModel)]="songAdd.songName" placeholder="Song name"/>
+    </div>
+    <div>
+        <label for="song-categoryName">Category: </label>
+        <input id="song-category" [(ngModel)]="songAdd.categoryName" placeholder="Category"/>
+    </div>
+    <div>
+        <label for="song-releaseyear">Release_year: </label>
+        <input id="song-releaseyear" [(ngModel)]="songAdd.releaseyear" placeholder="Release year"/>
+    </div>
+    <div>
+        <label for="song-author">Author: </label>
+        <input id="song-author" [(ngModel)]="songAdd.author" placeholder="Author"/>
+      </div>
+    <div>
+        <label for="song-fecha">Fecha: </label>
+        <input id="song-fecha" [(ngModel)]="songAdd.fecha" placeholder="Fecha"/>
+    </div>  
+     
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  
+    

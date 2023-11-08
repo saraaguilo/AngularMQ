@@ -312,7 +312,13 @@
     src="https://static.vecteezy.com/system/resources/previews/005/099/199/non_2x/circular-trumpet-for-jazz-music-concert-show-logo-design-vector.jpg"
   />
   <!--<span>Welcome to {{title}}! </span>-->
-</div>
+  <div class="surface-100 p-3 flex justify-content-between lg:justify-content-between align-items-center flex-wrap">
+    <div class="align-items-center flex">
+      <span class="line-height-3 text-md md:txt-lg text-900 font-bold">Dynamic themes in PrimeNG</span>
+    </div>
+    <a pRipple class="flex-align-items-end no-underline justify-content-center border-circle text-500 cursor-pointer transition-colors"></a>
+    <p-inputSwitch [(ngModel)]="themeSelection" (onChange)="changeTheme($event)"></p-inputSwitch>
+  </div>
 
 <div class="content" role="main">
 <h1>
